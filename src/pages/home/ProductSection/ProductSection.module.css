@@ -1,0 +1,155 @@
+.product {
+    display: flex;
+    margin-top: 20px;
+}
+
+.mobile {
+    display: none;
+}
+
+.description {
+    width: calc(100% - 670px);
+    margin-left: 20px;
+}
+
+.artNumber{
+    font-size: 13px;
+    color: var(--green-color);
+    margin: 0;
+}
+
+.productName{
+    margin: 0;
+}
+
+.comments {
+    color: var(--green-color);
+    font-size: 13px;
+}
+
+.productDesc {
+    font-size: 16px;
+}
+
+.hr {
+    opacity: 25%;
+    margin: 15px 0;
+}
+
+.hrDashedMobile {
+    display: none;
+}
+
+.cartSection,
+.chooseOption {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.optionRequest{
+    color: #1C1C1C;
+    font-size: 16px;
+    margin: 0;
+}
+
+.options {
+    font-size: 24px;
+}
+
+.chooseOptionIcons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.chooseOptionIcons img {
+    width: 60px;
+    height: 60px;
+}
+
+.cartBtn {
+    background-color: var(--green-color);
+    border: unset;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 35px;
+    color: var(--white-color);
+    gap: 15px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+@media (max-width: 1500px) {
+    .description {
+        width: calc(100% - 470px);
+    }
+}
+
+@media (max-width: 1024px) {
+    .description {
+        width: 100%;
+        margin-top: 50px;
+        margin-left: 0;
+    }
+
+    .product {
+        flex-wrap: wrap;
+        gap: 5px
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .desktop,
+    .hr,
+    .chooseOption {
+        display: none;
+    }
+
+    .cartSection {
+        border: 1px solid #3CAC34;
+        border-radius: 4px;
+        background-color: #EAF6EA;
+        padding: 15px;
+        flex-direction: column;
+    }
+
+    .price {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .hrDashedMobile {
+        display: block;
+        margin: 15px 0;
+        width: 100%;
+        border-top: 1px dashed #00000025
+    }
+}
+
+@media (max-width: 767px) {
+    .artNumber{
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .description {
+        margin-top: 40px;
+    }
+
+    .cartBtn {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .comments {
+        font-size: 16px;
+    }
+    
+}

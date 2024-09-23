@@ -1,0 +1,98 @@
+.easyToOrder {
+    border: 1px dashed #0000004D;
+    background-color: #F5F5F5;
+    padding: 20px;
+    margin-top: 15px;
+}
+
+.lapel {
+    font-size: 24px;
+}
+
+.form {
+    display: flex;
+    gap: 15px;
+}
+
+.input {
+    border: 1px solid #0000004D;
+    border-radius: 30px;
+    padding: 10px 20px;
+    width: 35%;
+    font-size: 16px;
+}
+
+.btn {
+    border: 1px solid #1C1C1C;
+    border-radius: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-size: 16px;
+}
+
+.hrDoshed {
+    border-top: 1px dashed #00000025;
+    margin: 20px 0;
+}
+
+.forMoreInfo {
+    display: flex;
+    gap: 40px;
+}
+
+.phone {
+    font-size: 27px;
+    font-weight: bold;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.phoneIcon {
+    width: 26px;
+    height: 26px;
+    color: #000;
+}
+
+@media (max-width: 1500px) {
+    .btn {
+        padding: 10px;
+        gap: 5px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .easyToOrder {
+        border-radius: 4px;
+    }
+
+    .form {
+        flex-wrap: wrap;
+    }
+
+    .btn,
+    .input {
+        width: 100%;
+    }
+
+    .btn {
+        border: unset;
+        background-color: var(--green-color);
+        color: var(--white-color)
+    }
+
+    .busIcon {
+        color: var(--white-color);
+        margin-right: 10px;
+    }
+
+    .forMoreInfo {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}

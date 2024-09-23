@@ -1,0 +1,121 @@
+@import "react-alice-carousel/lib/alice-carousel.css";
+
+.product-slider {
+    max-width: 670px;
+    width: 100%;
+    
+    .alice-carousel {
+        text-align: center;
+        height: 100%;
+    }
+
+    .alice-carousel div:first-of-type {
+        height: inherit;
+    }
+
+    .alice-carousel__wrapper {
+        border: 1px solid #E1E1E1;
+        border-radius: 10px;
+    }
+
+    .alice-carousel__prev-btn-item {
+        position: absolute;
+        left: 0px;
+        top: 44%;
+        font-size: 28px;
+        font-family: cursive;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        width: 40px;
+        height: 70px;
+        padding: 0!important;
+        display: flex!important;
+        justify-content: center;
+        align-items: center;
+        color: var(--background-light-color)!important;
+        background-color: #D8EED6;
+    }
+    .alice-carousel__prev-btn-item.__inactive {
+        display: none!important;
+    }
+    .alice-carousel__prev-btn-item span {
+        display: none;
+    }
+    .alice-carousel__prev-btn-item::before {
+        content: url('../../../../assets/svg/arrow-right.svg');
+        transform: translate(-3px, 3px) rotate(180deg)
+    }
+
+    .alice-carousel__next-btn-item {
+        position: absolute;
+        right: 0px;
+        top: 43%;
+        font-size: 28px;
+        font-family: cursive;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        width: 40px;
+        height: 70px;
+        padding: 0!important;
+        display: flex!important;
+        justify-content: center;
+        align-items: center;
+        color: var(--background-light-color)!important;
+        background-color: #D8EED6;
+    }
+    .alice-carousel__next-btn-item span {
+        display: none;
+    }
+    .alice-carousel__next-btn-item::before {
+        content: url('../../../../assets/svg/arrow-right.svg');
+        transform: translate(4px, -3px);
+    }
+
+    .alice-carousel__prev-btn-item:hover,
+    .alice-carousel__next-btn-item:hover {
+        -webkit-box-shadow: 0px 0px 5px 0px var(--green-color);
+        -moz-box-shadow: 0px 0px 5px 0px var(--green-color);
+        box-shadow: 0px 0px 5px 0px var(--green-color);
+        transition: 0.4s all;
+    }
+
+    .alice-carousel__stage-item div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: inherit;
+    }
+
+    .alice-carousel__dots {
+        margin-top: 10px!important;
+    }
+
+    .alice-carousel__dots-item.__active {
+        background-color: var(--green-color)!important;
+    }
+}
+
+@media (max-width: 1500px) {
+    .product-slider {
+        max-width: 470px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .product-slider {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .alice-carousel {
+        width: 100%!important;
+        padding: 0;
+        margin: 0!important;
+    }
+
+    .alice-carousel__prev-btn-item,
+    .alice-carousel__next-btn-item {
+        display: none!important;
+    }
+}

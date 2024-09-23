@@ -1,0 +1,30 @@
+.additionalInfo {
+    display: flex;
+    gap: 20px;
+}
+
+.infoBox {
+    background-color: #EAF6EA;
+    border: 1px dashed #3CAC34;
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 5px;
+}
+
+.title {
+    color: #3CAC34;
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 10px;
+}
+
+.ul {
+    padding-left: 15px;
+    font-size: 16px;
+}
+
+@media (max-width: 1024px) {
+    .additionalInfo {
+        flex-wrap: wrap;
+    }
+}

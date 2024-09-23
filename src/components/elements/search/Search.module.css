@@ -1,0 +1,15 @@
+.search {
+    border: 1px solid #0000001A;
+    display: flex;
+    gap: 13px;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    padding: 3px 3px 3px 18px;
+    border-radius: 30px;
+}
+
+.input {
+    border: unset;
+    outline: none;
+}
